@@ -1,0 +1,13 @@
+[Unit]
+Description=iSponsorBlockTV service
+
+[Service]
+Type=simple
+User=<user>
+ExecStart=<isponsorblock_home>/bin/main.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
